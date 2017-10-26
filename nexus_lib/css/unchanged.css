@@ -1,0 +1,11 @@
+#dv_msg_box {
+	position: fixed;
+	display: block;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #FEE;
+	border: 1px solid #F00;
+	border-radius: 5px;
+	font-size: 25px;
+}

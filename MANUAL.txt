@@ -1,0 +1,71 @@
+Nexus PHP Library for Systens Vr. 0
+===================================
+
+The Nexus PHP Library was created to facilitate the development of systems
+developed in PHP. It creates a system environment in the window-based browser,
+where you will have a virtual desktop, menu and taskbar.
+
+Form creation is based on XML files and the Menu structure is stored in the
+database.
+
+Much of the data processing such as listing, inserts, updates, and deletes are
+the responsibility of the library, by simply setting up the XML correctly
+to do so.
+
+
+Index
+=====
+
+1. Firsts steps
+1.1. Setting up
+
+2. Beggining
+2.1. First steps
+2.1.1 Initial Parameters
+
+X Developer errors
+
+
+
+1.1 Setting Up
+--------------
+
+First of all, to use the library you just move the directory nexus_lib to your
+system directory.
+
+
+2.1 First steps
+---------------
+
+To initialize the object you need create then, so use the INIT instruction as below.
+
+<?
+$array = array('version'=>'1.0', 'developer'=>'Nexus Group', 'date'=>'2016 - '.date('Y'));
+
+$f = new nexus();
+
+$f->init($array);
+?>
+
+
+2.1.1 Initial Parameters
+------------------------
+
+The initial parameters will be pass as array when you create the object (see 2.1.). The
+parameters avaliable are
+
+version - The system version
+developer - The developer name
+date - The system copyright date
+name - System name
+dir_forms - Forms directory (default 'form')
+dir_action - Action directory (default 'action')
+
+
+X Developer errors
+------------------
+
+* INIT need receive a array as parameter on initialization
+
+To initialize the library you need specify a basic parameters. You can see more
+information about initialization in section 2.1.
